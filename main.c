@@ -16,7 +16,7 @@ int main(void) {
 
   media = (nota1 + nota2) / 2;
 
-  if (media < 7) {
+  if ((media < 7)&&(media >= 5))  {
     printf("\t Sua media é %.2f \n", media);
 
     printf("\t Você ficou de recuperação! \n");
@@ -50,10 +50,13 @@ int main(void) {
       }
     }
   } 
-  else
+ else if (media >= 7)
   {
     printf("\t Parabéns você foi aprovado!");
   }
+else if (media < 5) {
+  printf("\t Você foi reprovado!");
+}
 
   return 0;
 }
